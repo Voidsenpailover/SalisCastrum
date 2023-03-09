@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    scroll-behavior: smooth;
     padding: 0px;
     list-style: none;
     text-decoration: none;
@@ -190,7 +191,13 @@ p {
 
 
 .video-page {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
     padding: 50px 0px;
+}
+.video-page video {
+    width: 50%;
 }
 
 .donation-page {
