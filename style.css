@@ -1,0 +1,220 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: rgb(22, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FCFCFC;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar ul li a {
+    display: block;
+    color: #FCFCFC;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover {
+    color : black;
+    background: white;
+}
+.nav-bar ul li a.active {
+    color: black;
+    background: white;
+}
+
+
+h1 {
+    font-family: 'Acme', sans-serif;
+    font-size: 100px;
+    color: #FCFCFC;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Alegreya', serif;
+    font-size: 60px;
+    margin: 0px;
+    color: #FCFCFC;
+}
+
+h3 {
+    font-family: 'Alegreya', serif;
+    font-size: 30px;
+    margin: 0px;
+    color: #FCFCFC;
+}
+
+p {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    margin: 0px;
+    color: #FCFCFC;
+}
+
+
+.navbar {
+    background-color : rgb(22, 22, 22);
+    padding: 20px;
+    display: flex;
+    background: rgb(22, 22, 22);
+}
+
+.main-div {
+    padding: 40px;
+    background: rgb(29, 29, 29);
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: black;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        height: 450px;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition : 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    border: 4px solid #000;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    box-shadow: inset 0 0 0 0 black;
+    transition: ease-out 0.3s;
+    outline: none;
+    font-family: 'Alegreya', sans-serif;
+}
+
+.btn:hover{
+    box-shadow: inset 300px 0 0 0 black;
+    cursor: pointer;
+    color: white;
+}
+
+
+.main-page {
+    padding: 50px;
+    padding-right: 600px;
+}
+.Logo img{
+    width: 100%;
+}
+.main-page h2 {
+    padding: 30px 0px;
+    padding-top: 0px;
+}
+.main-page h3 {
+    padding: 15px 0px;
+}
+
+
+.promvideo-page {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.promvideo-video img {
+    width: 100%;
+}
+
+
+.video-page {
+    padding: 50px 0px;
+}
+
+.donation-page {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 50px 0px;
+}
+.goal-container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.card {
+    margin: 0px 20px;
+    padding: 0px 10px;
+    border: 4px solid white;
+}
+
+footer {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background: rgb(22, 22, 22);
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Salis Castrum</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Salis Castrum</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">Accueil</a>
+                </li>
+                <li>
+                    <a href="#promvideo">Gameplay</a>
+                </li>
+                <li>
+                    <a href="#video">Materiel</a>
+                </li>
+                <li>
+                    <a href="#donation">DonationGoals</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-div color">
+        <div class="main-page">
+            <div class="Logo"><img src="./logo.png" alt="#"></div>
+            <h2>Découvrez une nouvelle expérience dans le domaine du jeu de stratégie</h2>
+            <h3>Découvrez notre jeu de stratégie et gestion qui vous metra en rivalité contre les autres royaumes !
+                Votre devoir est d'être le dernier en vie ou le royaume le plus avancé de tout le continent.
+            </h3>
+            <button class="btn">TEST</button>
+            <button class="btn">TEST 2</button>
+        </div>
+        <div class="promvideo-page" id="promvideo">
+                <h3>Trailer vidéo du projet</h2>
+                <div class="promvideo-video">
+                    <img src="./logo.png" alt="">
+                </div>
+                <h3>Voici un trailer de notre jeu, vous pouvez y voir les élément clé d'une partie et le bon
+                    déroulé de celle-ci !
+                </h3>
+        </div>
+        <div class="video-page" id="video">
+            <div class="video-img">
+                <img src="" alt="">
+            </div>
+            <div class="video-container">
+                <h3>Plateau de jeu, 75 jetons de nourriturre, 50 jeton d'armée, 50 jeton de construction, 4 murrail en
+                    physique, jeu de 40 cartes
+                </h3>
+                <button class="btn">TEST3</button>
+            </div>
+        </div>
+        <div class="donation-page" id="donation">
+            <div class="donationpage-text">
+                <h2>Donation Goal</h2>
+                <h3>Merci de soutenir notre projet en y mettant quelques écus</h3>
+            </div>
+            <div class="goal-container">
+                <div class="card">
+                    <p>Tier 1</p>
+                    <p>5€</p>
+                    <p>Rôle "donnateur" sur le discord</p>
+                </div>
+                <div class="card">
+                    <p>Tier 2</p>
+                    <p>15€</p>
+                    <p>Rôle + Wallpaper</p>
+                </div>
+                <div class="card">
+                    <p>Tier 3</p>
+                    <p>30€</p>
+                    <p>Rôle + Wallpaper + Pin's</p>
+                </div>
+                <div class="card">
+                    <p>Tier 4</p>
+                    <p>50€</p>
+                    <p>Tier 3 + Ost + T-shirt</p>
+                </div>
+                <div class="card">
+                    <p>Tier 5</p>
+                    <p>100€</p>
+                    <p>Tier 4 + Pull</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navBar = document.querySelector('.nav-bar');
+
+        hamburger.addEventListener('click', () => {
+            navBar.classList.toggle('active');
+        })
+    </script>
+
+</body>
+<footer>
+    <h2>Salis Castrum</h2>
+    <div class="contact-container">
+        <h3>Mentions Légales - Contacts</h3>
+    </div>
+</footer>
+
+</html>
